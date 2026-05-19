@@ -1,13 +1,13 @@
 .Proyecto de Microservicios de Torneos
 
 .Integrantes
-  -Tomas Porras
-  -Natalia Rios
-
+  - Tomas Porras
+  - Natalia Rios
+ 
 .Descripcion del proyecto
--Proyecto creado en base a microservicios para la gestiion de torneos deportivos
--Se implemento una arquitectura de microservicios mediantes OpenFegn y Spriing Boot
--Cada microservicio cuenta con una base de datos propia en MySQL 
+- Proyecto creado en base a microservicios para la gestiion de torneos deportivos
+- Se implemento una arquitectura de microservicios mediantes OpenFegn y Spriing Boot
+- Cada microservicio cuenta con una base de datos propia en MySQL 
 
 .Microservicios implementados
 
@@ -24,7 +24,7 @@
 
 .Funcionalidades 
 cada microservicio cuenta con un
--GET , -POST , -PUT y -DELETE
+- GET , -POST , -PUT y -DELETE
 
 .Puertos Ocupados
 - ms-equipo - 8081 
