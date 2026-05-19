@@ -27,17 +27,17 @@ cada microservicio cuenta con un
 -GET , -POST , -PUT y -DELETE
 
 .Puertos Ocupados
--ms-equipo - 8081 
--ms-jugador - 8082 
--ms-partido - 8083 
--ms-estadio - 8084 
--ms-entrenador - 8085 
--ms-estadistica - 8086 
--ms-arbitro - 8087 
--ms-posiciones - 8088 
--ms-torneo - 8089 
--ms-usuario - 8090 
-
+- ms-equipo - 8081 
+- ms-jugador - 8082 
+- ms-partido - 8083 
+- ms-estadio - 8084 
+- ms-entrenador - 8085 
+- ms-estadistica - 8086 
+- ms-arbitro - 8087 
+- ms-posiciones - 8088 
+- ms-torneo - 8089 
+- ms-usuario - 8090 
+ 
 Para ejecutar el proyecto
 
 Abrir los microservicios en vs code separados
