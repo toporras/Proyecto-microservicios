@@ -40,7 +40,7 @@ cada microservicio cuenta con un
  
 Para ejecutar el proyecto
 
-Abrir los microservicios en vs code separados
-Ejecutarlos en el orden de puertos
-Probar en Postman
+Abrir los microservicios en vs code separados.
+Ejecutarlos en el orden de puertos.
+Probar en Postman.
  
