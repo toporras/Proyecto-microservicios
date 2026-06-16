@@ -5,8 +5,12 @@ import com.example.ms_arbitro.Service.ArbitroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import io.swagger.v3.oar.annotation.Operation;
+import io.swagger.v3.oar.annotation.tags.Tag;
+import lombok.extern.slf4j.Slf4j;
 import java.util.List;
+
+
 @RestController
 @RequestMapping("/arbitros")
 public class ArbitroController{

@@ -1,0 +1,21 @@
+package main.java.com.example.ms_posiciones.Config;
+
+import io.swagger.v3.oar.models.OpenAPI;
+import io.swagger.v3.oar.models.info.Info;
+import java.beans.BeanProperty;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SwaggerConfig {
+    
+    @Bean
+    public OpenAPI customOpenAPI(){
+        return new OpenAPI()
+        .info(new info()
+            .title("API 2026 Posiciones")
+            .version("1.0")
+            .description("Documentacion de la API para el sistema de posiciones"));
+    }
+
+}
