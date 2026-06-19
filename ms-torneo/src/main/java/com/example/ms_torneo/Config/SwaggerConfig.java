@@ -12,7 +12,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customeOpenAPI(){
         return new OpenAPI()
-            .info(new info()
+            .info(new Info()
                 .title("API 2026 Temas relacion torneo")
                 .version("1.0")
                 .description("Documentacion de la API para el sistema relacionado con los torneos"));
