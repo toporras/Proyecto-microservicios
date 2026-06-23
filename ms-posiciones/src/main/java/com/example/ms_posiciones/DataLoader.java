@@ -1,4 +1,4 @@
-package main.java.com.example.ms_posiciones;
+package com.example.ms_posiciones;
 
 import com.example.ms_posiciones.Model.*;
 import com.example.ms_posiciones.Repository.*;
@@ -9,10 +9,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
-
 @Profile("dev")
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -21,10 +17,8 @@ public class DataLoader implements CommandLineRunner{
     private PosicionesRepository posicionesRepository;
     
     @Override
-    public void run(String...args) throws Exception{
-        
+    public void run(String...args) throws Exception{  
     Faker faker = new Faker();
-    Random random = new Random();
 
     for(int i = 0; i < 5; i++){
         Posiciones posiciones = new Posiciones();
