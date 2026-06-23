@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -28,4 +29,12 @@ public class Partido {
     private String estadio;
 
 
+    @ManyToOne
+    @JoinColumn(
+        name= "torneo_id",
+        nullable = false,
+        foreignKey = @ForeignKey(name = "fk_partido_torneo")
+    )
+
+    private Torneo torneo;
 }

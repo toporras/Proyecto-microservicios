@@ -5,14 +5,14 @@ import com.example.ms_partido.Service.PartidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import io.swagger.v3.oar.annotation.Operation;
-import io.swagger.v3.oar.annotation.tags.Tag;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/partidos")
+@RequestMapping("/api/v1/partidos")
 @Tag(name = "partidos", description = "Operaciones relacionadas con el partido")
 public class PartidoController {
     @Autowired
