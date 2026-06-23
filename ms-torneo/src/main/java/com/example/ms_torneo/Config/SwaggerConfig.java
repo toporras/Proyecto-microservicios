@@ -1,8 +1,7 @@
-package main.java.com.example.ms_torneo.Config;
+package com.example.ms_torneo.Config;
 
-import io.swagger.v3.oar.models.OpenAPI;
-import io.swagger.v3.oar.models.info.Info;
-import java.beans.BeanProperty;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

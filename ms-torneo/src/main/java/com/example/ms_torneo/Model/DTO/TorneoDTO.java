@@ -1,5 +1,4 @@
 package com.example.ms_torneo.Model.DTO;
-import com.example.ms_torneo.Model.Torneo;
 import lombok.Data;
 
 @Data

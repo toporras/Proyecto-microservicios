@@ -1,4 +1,6 @@
 package com.example.ms_torneo.Model;
+import java.util.List;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,4 +27,9 @@ public class Torneo {
 
     @Column(name="cantidad_equipos")
     private Integer cantidad_equipos;
+
+    @OneToMany(mappedBy = "torneo", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Partido> partidos;
+
+
 }
