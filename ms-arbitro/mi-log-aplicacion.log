@@ -1,0 +1,33 @@
+2026-06-22T17:02:15.792-04:00  INFO 32096 --- [ms-arbitro] [main] c.e.ms_arbitro.MsArbitroApplication      : Starting MsArbitroApplication using Java 21.0.10 with PID 32096 (C:\Users\natal\Downloads\Proyecto-microservicios\ms-arbitro\target\classes started by natal in C:\Users\natal\Downloads\Proyecto-microservicios\ms-arbitro)
+2026-06-22T17:02:15.798-04:00  INFO 32096 --- [ms-arbitro] [main] c.e.ms_arbitro.MsArbitroApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-22T17:02:17.471-04:00  INFO 32096 --- [ms-arbitro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-22T17:02:17.703-04:00  INFO 32096 --- [ms-arbitro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interface.
+2026-06-22T17:02:18.283-04:00  INFO 32096 --- [ms-arbitro] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31fcc781-370d-36b8-a8d0-2da1b1e3088a
+2026-06-22T17:02:19.054-04:00  INFO 32096 --- [ms-arbitro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8087 (http)
+2026-06-22T17:02:19.087-04:00  INFO 32096 --- [ms-arbitro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-22T17:02:19.088-04:00  INFO 32096 --- [ms-arbitro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-22T17:02:19.236-04:00  INFO 32096 --- [ms-arbitro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3351 ms
+2026-06-22T17:02:19.467-04:00  WARN 32096 --- [ms-arbitro] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flyway' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/flyway/autoconfigure/FlywayAutoConfiguration$FlywayConfiguration.class]: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine suitable jdbc url
+2026-06-22T17:02:19.474-04:00  INFO 32096 --- [ms-arbitro] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-22T17:02:19.513-04:00  INFO 32096 --- [ms-arbitro] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-22T17:02:19.564-04:00 ERROR 32096 --- [ms-arbitro] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
