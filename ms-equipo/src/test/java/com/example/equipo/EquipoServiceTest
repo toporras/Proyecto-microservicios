@@ -1,1 +1,82 @@
+package com.example.equipo.service;
 
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.example.equipo.model.Equipo;
+import com.example.equipo.repository.EquipoRepository;
+
+@SpringBootTest
+class EquipoServiceTest {
+
+    @Autowired
+    private EquipoService equipoService;
+
+    @MockBean
+    private EquipoRepository equipoRepository;
+
+    @Test
+    void testListar() {
+        // 1. configuracion del test
+        Equipo equipo1 = new Equipo(1, "Colo-Colo", "Santiago");
+        Equipo equipo2 = new Equipo(2, "Universidad de Chile", "Santiago");
+        when(equipoRepository.findAll()).thenReturn(List.of(equipo1, equipo2));
+
+        //ejecuta
+        List<Equipo> lista = equipoService.listar();
+
+        // verifica
+        assertNotNull(lista);
+        assertEquals(2, lista.size());
+        assertEquals("Colo-Colo", lista.get(0).getNombre());
+        verify(equipoRepository, times(1)).findAll();
+    }
+
+    @Test
+    void testBuscarPorId() {
+        Equipo mockEquipo = new Equipo(1, "Universidad Católica", "Santiago");
+        when(equipoRepository.findById(1)).thenReturn(Optional.of(mockEquipo));
+
+        Equipo resultado = equipoService.buscarPorId(1);
+
+        assertNotNull(resultado);
+        assertEquals("Universidad Católica", resultado.getNombre());
+        verify(equipoRepository, times(1)).findById(1);
+    }
+
+    @Test
+    void testGuardar() {
+
+        Equipo equipoAGuardar = new Equipo(null, "Coquimbo Unido", "Coquimbo");
+        Equipo equipoGuardado = new Equipo(3, "Coquimbo Unido", "Coquimbo");
+        when(equipoRepository.save(equipoAGuardar)).thenReturn(equipoGuardado);
+
+
+        Equipo resultado = equipoService.guardar(equipoAGuardar);
+
+        assertNotNull(resultado);
+        assertEquals(3, resultado.getId());
+        assertEquals("Coquimbo Unido", resultado.getNombre());
+        verify(equipoRepository, times(1)).save(equipoAGuardar);
+    }
+
+    @Test
+    void testEliminar() {
+        
+        Integer idAEliminar = 1;
+
+        doNothing().when(equipoRepository).deleteById(idAEliminar);
+
+        equipoService.eliminar(idAEliminar);
+        
+        verify(equipoRepository, times(1)).deleteById(idAEliminar);
+    }
+}
