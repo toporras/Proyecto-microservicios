@@ -35,10 +35,8 @@ public class EquipoService {
         Equipo equipo1 = equipoRepository.findById(id).orElse(null);
 
         if(equipo1 != null){
-
-            equipo1.setNombre(equipo1.getNombre());
-            equipo1.setCiudad(equipo1.getCiudad());
-
+            equipo1.setNombre(equipo.getNombre()); 
+            equipo1.setCiudad(equipo.getCiudad());
             return equipoRepository.save(equipo1);
         }
 
