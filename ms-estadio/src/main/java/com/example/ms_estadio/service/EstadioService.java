@@ -50,4 +50,9 @@ public class EstadioService {
     public void eliminar(Integer id){
         estadioRepository.deleteById(id);
     }
+
+    public Estadio findById(int id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+    }
 }
