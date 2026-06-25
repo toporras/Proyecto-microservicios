@@ -3,11 +3,21 @@
 .Integrantes
   - Tomas Porras
   - Natalia Rios
+
+.Requisitos previos
+- Debe contar con la version de java 21
  
 .Descripcion del proyecto
 - Proyecto creado en base a microservicios para la gestiion de torneos deportivos
 - Se implemento una arquitectura de microservicios mediantes OpenFegn y Spriing Boot
-- Cada microservicio cuenta con una base de datos propia en MySQL 
+- Cada microservicio cuenta con una base de datos propia en MySQL
+
+.Tecnologias implementadas
+- Swagger/OpenAPI: Documentación interactiva de todos los endpoints de los microservicios.
+- HATEOAS: Implementación de hipermedia para guiar la navegación de la API en los microservicios.
+- Eureka: Registro y descubrimiento de servicios para la orquestación del sistema.
+- DataFaker: Generación de datos de prueba dinámicos y realistas.
+- Pruebas Unitarias: Validación de lógica del negocio con JUnit5.
 
 .Microservicios implementados
 
@@ -40,7 +50,8 @@ cada microservicio cuenta con un
  
 Para ejecutar el proyecto
 
-Abrir los microservicios en vs code separados.
-Ejecutarlos en el orden de puertos.
-Probar en Postman.
+Abrir los microservicios en vs code en intancias separadas.
+Tener Mysql Workbench corriendo y configurado 
+Ejecutarlos los microservicios respetando el orden de puertos.
+Para probar los endpoints utiliza Postman o bien puedes navegar por los enlaces de Hateoas.
  
