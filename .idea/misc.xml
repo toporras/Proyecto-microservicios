@@ -4,11 +4,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/ms-equipo/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-posiciones/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-arbitro/pom.xml" />
+        <option value="$PROJECT_DIR$/ms_eurekaServer/ms_eurekaServer/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-torneo/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-partido/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-estadística/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="ms-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

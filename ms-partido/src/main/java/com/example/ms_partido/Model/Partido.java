@@ -28,13 +28,4 @@ public class Partido {
     @Column(name = "estadio")
     private String estadio;
 
-
-    @ManyToOne
-    @JoinColumn(
-        name= "torneo_id",
-        nullable = false,
-        foreignKey = @ForeignKey(name = "fk_partido_torneo")
-    )
-
-    private Torneo torneo;
 }

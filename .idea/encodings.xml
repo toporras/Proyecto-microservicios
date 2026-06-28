@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ms-arbitro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-equipo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-estadística/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-partido/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-posiciones/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-torneo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms_eurekaServer/ms_eurekaServer/src/main/java" charset="UTF-8" />
   </component>
 </project>
